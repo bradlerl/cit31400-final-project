@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkUp - Groups</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>LinkUp</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="groups.html">Groups</a>
+        </nav>
+    </header>
+    <main class="groups-page">
+        <div class="groups-column">
+            <section id="create-group">
+                <h2>Create Group</h2>
+                <form id="groupForm">
+                    <input id="groupName" type="text" placeholder="Group Name" required>
+                    <input id="groupTags" type="text" placeholder="Interests (comma separated)">
+                    <textarea id="groupDesc" placeholder="Description"></textarea>
+                    <button type="submit">Create Group</button>
+                </form>
+            </section>
+        </div>
+        <div class="groups-column">
+            <section id="groups-list">
+                <h2>Your Groups</h2>
+                <p id="no-groups-msg">You haven't joined any groups yet.</p>    
+            </section>
+            <section id="recommended-groups">
+                <h2>Recommended Groups</h2>
+            </section>
+        </div>
+        <div class="groups-column">
+            <section id="meetup-section" style="display:none;">
+                <h3>Suggested Meetup Spots</h3>
+                <p id="meetup-context">Select a group to see central meetup locations</p>
+                <div id="meetup-spots"></div>
+            </section>
+            <section id="events" style="display:none;">
+                <h2>Group Events</h2>
+            </section>
+            <section id="create-event">
+                <h2>Create Event</h2>
+                <form id="eventForm">
+                    <select id="groupSelect"></select>
+                    <input id="eventName" type="text" placeholder="Event Name" required>
+                    <input id="eventLocation" type="text" placeholder="Location" required>
+                    <input id="eventDate" type="datetime-local" required>
+                    <textarea id="eventDesc" placeholder="Description"></textarea>
+                    <button type="submit">Create Event</button>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>>

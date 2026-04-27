@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkUp - Profile</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>LinkUp</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="groups.html">Groups</a>
+        </nav>
+    </header>
+    <main>
+        <section id="profile-info">
+            <h2>User Profile</h2>
+            <div id="profile-card" class="card">
+                <h3 id="name">Name</h3>
+                <p id="age">Age: </p>
+                <p id="city">City: </p>
+                <p id="interests">Interests: </p>
+                <p id="bio">Bio: </p>
+            </div>
+        </section>
+        <section id="edit-profile">
+            <h3>Edit Profile</h3>
+            <form id="editProfileForm">
+                <input id="editName" type="text" placeholder="Name" required>
+                <input id="editAge" type="number" placeholder="Age" required>
+                <input id="editCity" type="text" placeholder="City">
+                <input id="editInterests" type="text" placeholder="Interests (comma separated)">
+                <textarea id="editBio" placeholder="Bio"></textarea>
+                <button type="submit">Save Changes</button>
+            </form>
+        </section>
+        <section id="friends">
+            <h3>Friends</h3>
+            <ul id="friendsList">
+                <li>Friend Name</li>
+            </ul>
+        </section>
+        <section id="friend-requests">
+            <h3>Friend Requests</h3>
+            <div class="request-card">
+                <p>User Name</p>
+                <div class="request-actions">
+                    <button>Accept</button>
+                    <button>Reject</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
