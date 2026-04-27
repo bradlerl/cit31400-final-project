@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkUp - Home</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>LinkUp</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="groups.html">Groups</a>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome">
+            <h2>Welcome!</h2>
+            <p>Find new friends based on shared interests and location.</p>
+            <div id="create-user">
+                <h2>Create New User</h2>
+                <input id="newName" placeholder="Name" />
+                <input id="newAge" type="number" placeholder="Age"/>
+                <input id="newCity" placeholder="City" />
+                <input id="newInterests" placeholder="Interests (comma separated)" />
+                <button id="createUserBtn">Create User</button>
+                <p id="createUserMsg"></p>
+            </div>
+            <div id="loginPanel">
+                <h2>Select User</h2>
+                <input id="userIdInput" placeholder="Enter last 6 chars of user ID" />
+                <button id="loginBtn">Login</button>
+                <div id="loginError"></div>
+            </div>
+        </section>
+        <div id="app" style="display: none;">
+            <section id="match-controls">
+                <h3>Find Matches</h3>
+                <button id="loadMatchesBtn">Load Matches</button>
+            </section>
+            <section id="matches">
+                <h3>Suggested Friends</h3>
+                <div id="matches-container" class="cards-container"></div>
+            </section>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </main>
+</body>
+</html>
